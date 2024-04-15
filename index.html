@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Calculator</title>
+<style>
+    #container {
+        text-align: center;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        background-color: #f4f4f4;
+        
+    }
+    button {
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: rgb(230, 221, 221);
+        color: black;
+        font-size: larger;
+
+    }
+
+    input {
+        padding: 22px;
+        margin: 5px;
+        width: 180px;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <input type="number" id="no1" placeholder="Enter number 1st ">
+    <input type="number" id="no2" placeholder="Enter number 2nd ">
+    <br>
+    <br>
+    <button onclick="add()" ><b>Add</b></button>
+    <button onclick="subtract()"><b>Subtract</b></button>
+    <button onclick="divide()"><b>Divide</b></button>
+    <button onclick="multiply()"><b>Multiply</b></button>
+    <div></div
+</div>
+<script>
+    function add() {
+        var number1 = parseFloat(document.getElementById('no1').value);
+        var number2 = parseFloat(document.getElementById('no2').value);
+        var total = number1 + number2;
+        alert('The result is = '+ total);
+    }
+
+    function subtract() {
+        var number1 = parseFloat(document.getElementById('no1').value);
+        var number2 = parseFloat(document.getElementById('no2').value);
+        var total = number1 - number2;
+        alert('The result is = '+ total);
+    }
+
+    function divide() {
+        var number1 = parseFloat(document.getElementById('no1').value);
+        var number2 = parseFloat(document.getElementById('no2').value);
+        var total = number1 / number2;
+        alert('The result is = ' + total);
+    }
+
+    function multiply() {
+        var number1 = parseFloat(document.getElementById('no1').value);
+        var number2 = parseFloat(document.getElementById('no2').value);
+        var total = number1 * number2;
+        alert('The result is = ' + total);
+    }
+</script>
+</body>
+</html>
